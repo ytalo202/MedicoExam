@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:background="#127109"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+
+
+            <TextView
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:textSize="20dp"
+
+                android:text="Configuraciones"
+
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+
+                android:id="@+id/btnSe"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/buttons" />
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            >
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etCorreo"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="#000"
+                    android:hint="Correo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etNombre"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="#000"
+                    android:hint="Nombre"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                 />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etApePaterno"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="#000"
+                    android:hint="Apellido Paterno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etApeMaterno"
+                    android:textColorHint="@color/colorAccent"
+                    android:textColor="#000"
+                    android:hint="Apellido Materno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+            >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+
+                    android:src="@drawable/calendario" />
+
+                <EditText
+                    android:id="@+id/showDate2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:enabled="false"
+                    android:hint="xxxx/mm/dd"
+                    android:textColorHint="#000"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnfragfecha"
+
+                    android:text="Elegir" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="7dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                >
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:onClick="Fecha"
+                    android:src="@drawable/grupo" />
+
+
+                <Spinner
+
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/spnCategoria2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+
+                    android:textColor="#007540" />
+            </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:text="Editar Datos"
+                    android:id="@+id/btnEditarDatos"
+
+                    android:layout_height="wrap_content" />
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+
+        android:text="Guardar Cambios"
+
+        android:id="@+id/btnGuardarDatos"
+
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+
+                    android:text="Nueva Clave"
+                    android:id="@+id/btnNewClave"
+                    android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

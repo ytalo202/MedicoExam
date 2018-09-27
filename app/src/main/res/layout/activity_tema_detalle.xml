@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TemaDetalleActivity"
+    android:background="#fff"
+
+    >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:background="#127109"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Nombre"
+            android:textColor="#FFFFFF"
+            android:id="@+id/txtDetNombre"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        >
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Nota"
+                android:textColor="#5C5C5C"
+                android:id="@+id/txtDetNota"
+
+                />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:textColor="#5C5C5C"
+                android:layout_height="wrap_content"
+                android:text="Num Oportunidades"
+                android:id="@+id/txtNumOp"
+                />
+        </LinearLayout>
+
+
+
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion"
+    android:textColor="#5C5C5C"
+        android:id="@+id/txtDetDescrip"
+
+        />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#5C5C5C"
+                android:layout_height="wrap_content"
+                android:text="Ponente"
+                android:id="@+id/txtDetPonente"
+                />
+
+            <TextView
+                android:textColor="#5C5C5C"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ponente"
+                android:id="@+id/txtDetPonente2"
+                />
+
+
+        </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+
+    <ListView
+        android:layout_marginTop="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LSTVIDEOS"
+        >
+
+    </ListView>
+</LinearLayout>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Test"
+        android:onClick="StartTest"
+        android:enabled="false"
+        android:id="@+id/btnTest"
+        />
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cursos"
+            android:onClick="IrPrincipal"
+            android:layout_marginRight="5dp"
+
+            />
+            <Button
+                android:layout_marginLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Temarios"
+                android:onClick="IrTemarios"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

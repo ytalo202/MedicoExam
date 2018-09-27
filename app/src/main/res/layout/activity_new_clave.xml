@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewClave">
+
+    <TextView
+        android:background="#127109"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Nueva Clave"
+        android:textColor="#FFFFFF"
+        android:id="@+id/txtDetNombre"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+    <android.support.design.widget.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etbo"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etClaveActual"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="#000"
+            android:hint="Clave Actual"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ValidarClave"
+        android:id="@+id/btnValidarClave"
+
+
+        android:text="Validar"/>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etbo1"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etNuevaClave"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="#000"
+                android:hint="Nueva Clave"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etbo2"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etNuevaClave2"
+                android:textColorHint="@color/colorAccent"
+                android:textColor="#000"
+                android:hint="Confirmar Clave"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ConfirmarClave"
+
+            android:id="@+id/btnConfirmar"
+            android:text="Confirmar"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ClaCancelar"
+            android:id="@+id/btnClcancelar"
+            android:text="Cancelar"/>
+    </LinearLayout>
+
+</LinearLayout>

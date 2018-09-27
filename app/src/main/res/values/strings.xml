@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SOCEMURP</string>
+    <string name="ingresar">Ingregar</string>
+    <string name="name">NombreApp</string>
+    <string name="nuevoUsu">Nuevo Usuario</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="base_uri">https://loli202.000webhostapp.com/</string>
+</resources>

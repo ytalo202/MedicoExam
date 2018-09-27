@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".RegistroActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/lblmensaje"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/nuevoUsu"
+            android:textColor="#007540"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/usrusr" />
+
+            <EditText
+                android:id="@+id/edCorreoR"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:hint="Corrreo Electronico"
+                android:textColorHint="#007540"
+                android:inputType="textEmailAddress"
+                android:letterSpacing="0.1"
+                android:onClick="Cambiar"
+                android:textColor="#007540"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verificar"
+                android:onClick="Verificar"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:onClick="Fecha"
+                android:src="@drawable/grupo" />
+
+
+            <Spinner
+
+                android:layout_marginLeft="15dp"
+                android:id="@+id/spnCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColor="#007540" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+
+                android:src="@drawable/calendario" />
+
+            <EditText
+                android:id="@+id/showDate"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:enabled="false"
+                android:hint="xxxx/mm/dd"
+                android:textColorHint="#007540"
+
+
+                android:letterSpacing="0.1"
+                android:textColor="#007540"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Fecha"
+                android:text="Elegir" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:onClick="Fecha"
+                android:src="@drawable/pswd" />
+
+
+            <EditText
+                android:textColorHint="#007540"
+                android:layout_marginLeft="15dp"
+                android:letterSpacing="0.1"
+                android:textColor="#007540"
+                android:textSize="16dp"
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:onClick="Fecha"
+                android:src="@drawable/pswd" />
+
+
+            <EditText
+                android:textColorHint="#007540"
+                android:layout_marginLeft="15dp"
+                android:letterSpacing="0.1"
+                android:textColor="#007540"
+                android:textSize="16dp"
+                android:id="@+id/edPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Repita Password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Agregar"
+            android:text="Agregar" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Cancelar"
+            android:text="Cancelar" />
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
